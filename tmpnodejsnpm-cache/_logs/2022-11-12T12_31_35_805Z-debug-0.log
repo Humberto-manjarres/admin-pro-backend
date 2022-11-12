@@ -1,0 +1,351 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\Humberto Manjarres\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@8.12.2
+2 info using node@v16.14.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:C:\Users\Humberto Manjarres\AppData\Roaming\npm\node_modules\npm\npmrc Completed in 5ms
+6 timing config:load:builtin Completed in 5ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:C:\Users\Humberto Manjarres\Desktop\CURSOS\ANGULAR\Angular Fernando Herrera\Angular-adv\04-backend-server\.npmrc Completed in 0ms
+10 timing config:load:project Completed in 9ms
+11 timing config:load:file:C:\Users\Humberto Manjarres\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Users\Humberto Manjarres\AppData\Roaming\npm\etc\npmrc Completed in 2ms
+14 timing config:load:global Completed in 2ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:credentials Completed in 2ms
+17 timing config:load:setEnvs Completed in 2ms
+18 timing config:load Completed in 29ms
+19 timing npm:load:configload Completed in 29ms
+20 timing npm:load:mkdirpcache Completed in 2ms
+21 timing npm:load:mkdirplogs Completed in 0ms
+22 verbose title npm i jsonwebtoken
+23 verbose argv "i" "jsonwebtoken"
+24 timing npm:load:setTitle Completed in 2ms
+25 timing config:load:flatten Completed in 6ms
+26 timing npm:load:display Completed in 8ms
+27 verbose logfile logs-max:10 dir:C:\Users\Humberto Manjarres\Desktop\CURSOS\ANGULAR\Angular Fernando Herrera\Angular-adv\04-backend-server\tmpnodejsnpm-cache\_logs
+28 verbose logfile C:\Users\Humberto Manjarres\Desktop\CURSOS\ANGULAR\Angular Fernando Herrera\Angular-adv\04-backend-server\tmpnodejsnpm-cache\_logs\2022-11-12T12_31_35_805Z-debug-0.log
+29 timing npm:load:logFile Completed in 19ms
+30 timing npm:load:timers Completed in 1ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 64ms
+33 timing arborist:ctor Completed in 2ms
+34 silly logfile start cleaning logs, removing 2 files
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 316ms
+37 timing idealTree:userRequests Completed in 6ms
+38 silly idealTree buildDeps
+39 silly fetch manifest jsonwebtoken@*
+40 timing arborist:ctor Completed in 1ms
+41 http fetch GET 200 https://registry.npmjs.org/jsonwebtoken 558ms (cache miss)
+42 silly placeDep ROOT jsonwebtoken@8.5.1 OK for: 04-backend-server@1.0.0 want: *
+43 silly fetch manifest jws@^3.2.2
+44 silly fetch manifest lodash.includes@^4.3.0
+45 silly fetch manifest lodash.isboolean@^3.0.3
+46 silly fetch manifest lodash.isinteger@^4.0.4
+47 silly fetch manifest lodash.isnumber@^3.0.3
+48 silly fetch manifest lodash.isplainobject@^4.0.6
+49 silly fetch manifest lodash.isstring@^4.0.1
+50 silly fetch manifest lodash.once@^4.0.0
+51 silly fetch manifest ms@^2.1.1
+52 silly fetch manifest semver@^5.6.0
+53 http fetch GET 200 https://registry.npmjs.org/lodash.includes 186ms (cache miss)
+54 http fetch GET 200 https://registry.npmjs.org/lodash.isnumber 210ms (cache miss)
+55 http fetch GET 200 https://registry.npmjs.org/lodash.isstring 242ms (cache miss)
+56 http fetch GET 200 https://registry.npmjs.org/lodash.isinteger 246ms (cache miss)
+57 http fetch GET 200 https://registry.npmjs.org/ms 262ms (cache revalidated)
+58 http fetch GET 200 https://registry.npmjs.org/semver 305ms (cache updated)
+59 http fetch GET 200 https://registry.npmjs.org/jws 471ms (cache miss)
+60 http fetch GET 200 https://registry.npmjs.org/lodash.once 610ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/lodash.isboolean 636ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/lodash.isplainobject 658ms (cache miss)
+63 timing idealTree:#root Completed in 1244ms
+64 silly placeDep ROOT jws@3.2.2 OK for: jsonwebtoken@8.5.1 want: ^3.2.2
+65 silly placeDep ROOT lodash.includes@4.3.0 OK for: jsonwebtoken@8.5.1 want: ^4.3.0
+66 silly placeDep ROOT lodash.isboolean@3.0.3 OK for: jsonwebtoken@8.5.1 want: ^3.0.3
+67 silly placeDep ROOT lodash.isinteger@4.0.4 OK for: jsonwebtoken@8.5.1 want: ^4.0.4
+68 silly placeDep ROOT lodash.isnumber@3.0.3 OK for: jsonwebtoken@8.5.1 want: ^3.0.3
+69 silly placeDep ROOT lodash.isplainobject@4.0.6 OK for: jsonwebtoken@8.5.1 want: ^4.0.6
+70 silly placeDep ROOT lodash.isstring@4.0.1 OK for: jsonwebtoken@8.5.1 want: ^4.0.1
+71 silly placeDep ROOT lodash.once@4.1.1 OK for: jsonwebtoken@8.5.1 want: ^4.0.0
+72 silly placeDep node_modules/jsonwebtoken ms@2.1.3 OK for: jsonwebtoken@8.5.1 want: ^2.1.1
+73 silly placeDep ROOT semver@5.7.1 OK for: jsonwebtoken@8.5.1 want: ^5.6.0
+74 silly fetch manifest jwa@^1.4.1
+75 http fetch GET 200 https://registry.npmjs.org/jwa 517ms (cache miss)
+76 timing idealTree:node_modules/jsonwebtoken Completed in 543ms
+77 silly placeDep ROOT jwa@1.4.1 OK for: jws@3.2.2 want: ^1.4.1
+78 silly fetch manifest buffer-equal-constant-time@1.0.1
+79 silly fetch manifest ecdsa-sig-formatter@1.0.11
+80 http fetch GET 200 https://registry.npmjs.org/buffer-equal-constant-time 80ms (cache miss)
+81 http fetch GET 200 https://registry.npmjs.org/ecdsa-sig-formatter 96ms (cache miss)
+82 timing idealTree:node_modules/jws Completed in 102ms
+83 silly placeDep ROOT buffer-equal-constant-time@1.0.1 OK for: jwa@1.4.1 want: 1.0.1
+84 silly placeDep ROOT ecdsa-sig-formatter@1.0.11 OK for: jwa@1.4.1 want: 1.0.11
+85 timing idealTree:node_modules/jwa Completed in 4ms
+86 timing idealTree:node_modules/buffer-equal-constant-time Completed in 0ms
+87 timing idealTree:node_modules/ecdsa-sig-formatter Completed in 0ms
+88 timing idealTree:node_modules/lodash.includes Completed in 0ms
+89 timing idealTree:node_modules/lodash.isboolean Completed in 0ms
+90 timing idealTree:node_modules/lodash.isinteger Completed in 0ms
+91 timing idealTree:node_modules/lodash.isnumber Completed in 0ms
+92 timing idealTree:node_modules/lodash.isplainobject Completed in 0ms
+93 timing idealTree:node_modules/lodash.isstring Completed in 0ms
+94 timing idealTree:node_modules/lodash.once Completed in 0ms
+95 timing idealTree:node_modules/semver Completed in 0ms
+96 timing idealTree:node_modules/jsonwebtoken/node_modules/ms Completed in 0ms
+97 timing idealTree:buildDeps Completed in 1898ms
+98 timing idealTree:fixDepFlags Completed in 3ms
+99 timing idealTree Completed in 2228ms
+100 timing reify:loadTrees Completed in 2229ms
+101 timing reify:diffTrees Completed in 15ms
+102 silly reify moves {}
+103 timing reify:retireShallow Completed in 2ms
+104 timing reify:createSparse Completed in 14ms
+105 timing reify:loadBundles Completed in 0ms
+106 silly audit bulk request {
+106 silly audit   '@aws-crypto/ie11-detection': [ '2.0.2' ],
+106 silly audit   tslib: [ '1.14.1', '2.4.1' ],
+106 silly audit   '@aws-crypto/sha256-browser': [ '2.0.0' ],
+106 silly audit   '@aws-crypto/sha256-js': [ '2.0.0' ],
+106 silly audit   '@aws-crypto/supports-web-crypto': [ '2.0.2' ],
+106 silly audit   '@aws-crypto/util': [ '2.0.2' ],
+106 silly audit   '@aws-sdk/abort-controller': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/client-cognito-identity': [ '3.204.0' ],
+106 silly audit   '@aws-sdk/client-sso': [ '3.204.0' ],
+106 silly audit   '@aws-sdk/client-sts': [ '3.204.0' ],
+106 silly audit   '@aws-sdk/config-resolver': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/credential-provider-cognito-identity': [ '3.204.0' ],
+106 silly audit   '@aws-sdk/credential-provider-env': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/credential-provider-imds': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/credential-provider-ini': [ '3.204.0' ],
+106 silly audit   '@aws-sdk/credential-provider-node': [ '3.204.0' ],
+106 silly audit   '@aws-sdk/credential-provider-process': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/credential-provider-sso': [ '3.204.0' ],
+106 silly audit   '@aws-sdk/credential-provider-web-identity': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/credential-providers': [ '3.204.0' ],
+106 silly audit   '@aws-sdk/fetch-http-handler': [ '3.204.0' ],
+106 silly audit   '@aws-sdk/hash-node': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/invalid-dependency': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/is-array-buffer': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-content-length': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-endpoint': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-host-header': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-logger': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-recursion-detection': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-retry': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-sdk-sts': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-serde': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-signing': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-stack': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/middleware-user-agent': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/node-config-provider': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/node-http-handler': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/property-provider': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/protocol-http': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/querystring-builder': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/querystring-parser': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/service-error-classification': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/shared-ini-file-loader': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/signature-v4': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/smithy-client': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/types': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/url-parser': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-base64': [ '3.202.0' ],
+106 silly audit   '@aws-sdk/util-base64-browser': [ '3.188.0' ],
+106 silly audit   '@aws-sdk/util-base64-node': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-body-length-browser': [ '3.188.0' ],
+106 silly audit   '@aws-sdk/util-body-length-node': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-buffer-from': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-config-provider': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-defaults-mode-browser': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-defaults-mode-node': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-endpoints': [ '3.202.0' ],
+106 silly audit   '@aws-sdk/util-hex-encoding': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-locate-window': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-middleware': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-uri-escape': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-user-agent-browser': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-user-agent-node': [ '3.201.0' ],
+106 silly audit   '@aws-sdk/util-utf8-browser': [ '3.188.0' ],
+106 silly audit   '@aws-sdk/util-utf8-node': [ '3.201.0' ],
+106 silly audit   '@types/node': [ '18.11.9' ],
+106 silly audit   '@types/webidl-conversions': [ '7.0.0' ],
+106 silly audit   '@types/whatwg-url': [ '8.2.2' ],
+106 silly audit   accepts: [ '1.3.8' ],
+106 silly audit   'array-flatten': [ '1.1.1' ],
+106 silly audit   'base64-js': [ '1.5.1' ],
+106 silly audit   bcryptjs: [ '2.4.3' ],
+106 silly audit   'body-parser': [ '1.20.1' ],
+106 silly audit   bowser: [ '2.11.0' ],
+106 silly audit   bson: [ '4.7.0' ],
+106 silly audit   buffer: [ '5.7.1' ],
+106 silly audit   bytes: [ '3.1.2' ],
+106 silly audit   'call-bind': [ '1.0.2' ],
+106 silly audit   'content-disposition': [ '0.5.4' ],
+106 silly audit   'content-type': [ '1.0.4' ],
+106 silly audit   cookie: [ '0.5.0' ],
+106 silly audit   'cookie-signature': [ '1.0.6' ],
+106 silly audit   cors: [ '2.8.5' ],
+106 silly audit   debug: [ '2.6.9', '4.3.4' ],
+106 silly audit   denque: [ '2.1.0' ],
+106 silly audit   depd: [ '2.0.0' ],
+106 silly audit   destroy: [ '1.2.0' ],
+106 silly audit   dotenv: [ '16.0.3' ],
+106 silly audit   'ee-first': [ '1.1.1' ],
+106 silly audit   encodeurl: [ '1.0.2' ],
+106 silly audit   'escape-html': [ '1.0.3' ],
+106 silly audit   etag: [ '1.8.1' ],
+106 silly audit   express: [ '4.18.2' ],
+106 silly audit   'express-validator': [ '6.14.2' ],
+106 silly audit   'fast-xml-parser': [ '4.0.11' ],
+106 silly audit   finalhandler: [ '1.2.0' ],
+106 silly audit   forwarded: [ '0.2.0' ],
+106 silly audit   fresh: [ '0.5.2' ],
+106 silly audit   'function-bind': [ '1.1.1' ],
+106 silly audit   'get-intrinsic': [ '1.1.3' ],
+106 silly audit   has: [ '1.0.3' ],
+106 silly audit   'has-symbols': [ '1.0.3' ],
+106 silly audit   'http-errors': [ '2.0.0' ],
+106 silly audit   'iconv-lite': [ '0.4.24' ],
+106 silly audit   ieee754: [ '1.2.1' ],
+106 silly audit   inherits: [ '2.0.4' ],
+106 silly audit   ip: [ '2.0.0' ],
+106 silly audit   'ipaddr.js': [ '1.9.1' ],
+106 silly audit   kareem: [ '2.4.1' ],
+106 silly audit   lodash: [ '4.17.21' ],
+106 silly audit   'media-typer': [ '0.3.0' ],
+106 silly audit   'memory-pager': [ '1.5.0' ],
+106 silly audit   'merge-descriptors': [ '1.0.1' ],
+106 silly audit   methods: [ '1.1.2' ],
+106 silly audit   mime: [ '1.6.0' ],
+106 silly audit   'mime-db': [ '1.52.0' ],
+106 silly audit   'mime-types': [ '2.1.35' ],
+106 silly audit   mongodb: [ '4.11.0' ],
+106 silly audit   'mongodb-connection-string-url': [ '2.5.4' ],
+106 silly audit   mongoose: [ '6.7.1' ],
+106 silly audit   ms: [ '2.1.3', '2.1.2', '2.0.0' ],
+106 silly audit   mongose: [ '0.0.2-security' ],
+106 silly audit   mpath: [ '0.9.0' ],
+106 silly audit   mquery: [ '4.0.3' ],
+106 silly audit   negotiator: [ '0.6.3' ],
+106 silly audit   'object-assign': [ '4.1.1' ],
+106 silly audit   'object-inspect': [ '1.12.2' ],
+106 silly audit   'on-finished': [ '2.4.1' ],
+106 silly audit   parseurl: [ '1.3.3' ],
+106 silly audit   'path-to-regexp': [ '0.1.7' ],
+106 silly audit   'proxy-addr': [ '2.0.7' ],
+106 silly audit   punycode: [ '2.1.1' ],
+106 silly audit   qs: [ '6.11.0' ],
+106 silly audit   'range-parser': [ '1.2.1' ],
+106 silly audit   'raw-body': [ '2.5.1' ],
+106 silly audit   'safe-buffer': [ '5.2.1' ],
+106 silly audit   'safer-buffer': [ '2.1.2' ],
+106 silly audit   saslprep: [ '1.0.3' ],
+106 silly audit   send: [ '0.18.0' ],
+106 silly audit   'serve-static': [ '1.15.0' ],
+106 silly audit   setprototypeof: [ '1.2.0' ],
+106 silly audit   'side-channel': [ '1.0.4' ],
+106 silly audit   sift: [ '16.0.1' ],
+106 silly audit   'smart-buffer': [ '4.2.0' ],
+106 silly audit   socks: [ '2.7.1' ],
+106 silly audit   'sparse-bitfield': [ '3.0.3' ],
+106 silly audit   statuses: [ '2.0.1' ],
+106 silly audit   strnum: [ '1.0.5' ],
+106 silly audit   toidentifier: [ '1.0.1' ],
+106 silly audit   tr46: [ '3.0.0' ],
+106 silly audit   'type-is': [ '1.6.18' ],
+106 silly audit   unpipe: [ '1.0.0' ],
+106 silly audit   'utils-merge': [ '1.0.1' ],
+106 silly audit   uuid: [ '8.3.2' ],
+106 silly audit   validator: [ '13.7.0' ],
+106 silly audit   vary: [ '1.1.2' ],
+106 silly audit   'webidl-conversions': [ '7.0.0' ],
+106 silly audit   'whatwg-url': [ '11.0.0' ],
+106 silly audit   jsonwebtoken: [ '8.5.1' ],
+106 silly audit   jws: [ '3.2.2' ],
+106 silly audit   'lodash.includes': [ '4.3.0' ],
+106 silly audit   'lodash.isboolean': [ '3.0.3' ],
+106 silly audit   'lodash.isinteger': [ '4.0.4' ],
+106 silly audit   'lodash.isnumber': [ '3.0.3' ],
+106 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+106 silly audit   'lodash.isstring': [ '4.0.1' ],
+106 silly audit   'lodash.once': [ '4.1.1' ],
+106 silly audit   semver: [ '5.7.1' ],
+106 silly audit   jwa: [ '1.4.1' ],
+106 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+106 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ]
+106 silly audit }
+107 silly tarball no local data for ecdsa-sig-formatter@https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz. Extracting by manifest.
+108 silly tarball no local data for buffer-equal-constant-time@https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz. Extracting by manifest.
+109 silly tarball no local data for jwa@https://registry.npmjs.org/jwa/-/jwa-1.4.1.tgz. Extracting by manifest.
+110 silly tarball no local data for lodash.isplainobject@https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz. Extracting by manifest.
+111 silly tarball no local data for lodash.isstring@https://registry.npmjs.org/lodash.isstring/-/lodash.isstring-4.0.1.tgz. Extracting by manifest.
+112 silly tarball no local data for lodash.once@https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz. Extracting by manifest.
+113 silly tarball no local data for lodash.isnumber@https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz. Extracting by manifest.
+114 silly tarball no local data for lodash.isinteger@https://registry.npmjs.org/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz. Extracting by manifest.
+115 silly tarball no local data for lodash.isboolean@https://registry.npmjs.org/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz. Extracting by manifest.
+116 silly tarball no local data for lodash.includes@https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz. Extracting by manifest.
+117 silly tarball no local data for jws@https://registry.npmjs.org/jws/-/jws-3.2.2.tgz. Extracting by manifest.
+118 silly tarball no local data for jsonwebtoken@https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz. Extracting by manifest.
+119 timing reifyNode:node_modules/jsonwebtoken/node_modules/ms Completed in 125ms
+120 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 236ms
+121 timing auditReport:getReport Completed in 249ms
+122 silly audit report {}
+123 timing auditReport:init Completed in 0ms
+124 timing reify:audit Completed in 252ms
+125 timing reifyNode:node_modules/semver Completed in 227ms
+126 http fetch GET 200 https://registry.npmjs.org/jwa/-/jwa-1.4.1.tgz 278ms (cache miss)
+127 timing reifyNode:node_modules/jwa Completed in 329ms
+128 http fetch GET 200 https://registry.npmjs.org/lodash.isstring/-/lodash.isstring-4.0.1.tgz 288ms (cache miss)
+129 timing reifyNode:node_modules/lodash.isstring Completed in 335ms
+130 http fetch GET 200 https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz 293ms (cache miss)
+131 timing reifyNode:node_modules/lodash.isplainobject Completed in 336ms
+132 http fetch GET 200 https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz 295ms (cache miss)
+133 timing reifyNode:node_modules/lodash.once Completed in 343ms
+134 http fetch GET 200 https://registry.npmjs.org/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz 293ms (cache miss)
+135 timing reifyNode:node_modules/lodash.isboolean Completed in 349ms
+136 http fetch GET 200 https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz 302ms (cache miss)
+137 timing reifyNode:node_modules/lodash.isnumber Completed in 352ms
+138 http fetch GET 200 https://registry.npmjs.org/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz 310ms (cache miss)
+139 timing reifyNode:node_modules/lodash.isinteger Completed in 362ms
+140 http fetch GET 200 https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz 327ms (cache miss)
+141 timing reifyNode:node_modules/buffer-equal-constant-time Completed in 377ms
+142 http fetch GET 200 https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz 346ms (cache miss)
+143 timing reifyNode:node_modules/ecdsa-sig-formatter Completed in 384ms
+144 http fetch GET 200 https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz 325ms (cache miss)
+145 timing reifyNode:node_modules/lodash.includes Completed in 385ms
+146 http fetch GET 200 https://registry.npmjs.org/jws/-/jws-3.2.2.tgz 328ms (cache miss)
+147 timing reifyNode:node_modules/jws Completed in 395ms
+148 http fetch GET 200 https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz 369ms (cache miss)
+149 timing reifyNode:node_modules/jsonwebtoken Completed in 440ms
+150 timing reify:unpack Completed in 444ms
+151 timing reify:unretire Completed in 1ms
+152 timing build:queue Completed in 4ms
+153 timing build:link:node_modules/semver Completed in 12ms
+154 timing build:link Completed in 14ms
+155 timing build:deps Completed in 19ms
+156 timing build Completed in 20ms
+157 timing reify:build Completed in 22ms
+158 timing reify:trash Completed in 1ms
+159 timing reify:save Completed in 137ms
+160 timing reify Completed in 2998ms
+161 silly ADD node_modules/ecdsa-sig-formatter
+162 silly ADD node_modules/buffer-equal-constant-time
+163 silly ADD node_modules/jwa
+164 silly ADD node_modules/semver
+165 silly ADD node_modules/lodash.once
+166 silly ADD node_modules/lodash.isstring
+167 silly ADD node_modules/lodash.isplainobject
+168 silly ADD node_modules/lodash.isnumber
+169 silly ADD node_modules/lodash.isinteger
+170 silly ADD node_modules/lodash.isboolean
+171 silly ADD node_modules/lodash.includes
+172 silly ADD node_modules/jws
+173 silly ADD node_modules/jsonwebtoken
+174 silly ADD node_modules/jsonwebtoken/node_modules/ms
+175 timing command:i Completed in 3031ms
+176 verbose exit 0
+177 timing npm Completed in 3422ms
+178 info ok
