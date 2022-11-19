@@ -1,4 +1,4 @@
-const { response } = require('express');
+const { response, request } = require('express');
 const Hospital = require('../models/hospital');
 
 const getHospitales = async (req,res = response)=>{
@@ -43,19 +43,70 @@ const crearHospital = async (req,res = response)=>{
     }
 }
 
-const actualizarHospital = async (req,res = response)=>{
-    res.json({
-        ok: true,
-        msg: 'actualizar hospital'
-    });
+const actualizarHospital = async (req = request,res = response)=>{
+    const id = req.params.id;
+    const uid = req.uid;//usuario que está actualizando el hospital
+
+    try {
+        const hospitaDB = await Hospital.findById(id);
+        if (!hospitaDB) {
+            res.status(404).json({
+                ok: false,
+                msg: 'hospital no encontrado'
+            });    
+        }
+
+        //hospitaDB.nombre = req.body.nombre;
+        const cambiosHospital = {
+            ...req.body,
+            usuario: uid
+        }
+
+        /* el parametro --> {new: true} nos retorna el hospital actualizado */
+        const hospitalActualizado = await Hospital.findByIdAndUpdate(id, cambiosHospital, {new: true});
+
+        res.json({
+            ok: true,
+            hospital: hospitalActualizado
+        });
+
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            ok: false,
+            msg: 'hable con el admin'
+        });
+    }
+
+    
 }
 
 
-const borrarHospital = async (req,res = response)=>{
-    res.json({
-        ok: true,
-        msg: 'borrar hospital'
-    });
+const borrarHospital = async (req = request,res = response)=>{
+    const id = req.params.id;
+    try {
+        const hospitaDB = await Hospital.findById(id);
+        if (!hospitaDB) {
+            res.status(404).json({
+                ok: false,
+                msg: 'hospital no encontrado'
+            });    
+        }
+
+        await Hospital.findByIdAndDelete(id);
+
+        res.json({
+            ok: true,
+            msg: 'Hospital eliminado!'
+        });
+
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            ok: false,
+            msg: 'hable con el admin'
+        });
+    }
 }
 
 module.exports = {
