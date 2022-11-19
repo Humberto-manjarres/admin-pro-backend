@@ -1,16 +1,30 @@
-const { response } = require('express');
+const { response, request } = require('express');
 const bcrypt = require('bcryptjs');
 const Usuario = require('../models/usuario');
 const { generarJWT } = require('../helpers/jwt');
 
-const getUsuarios = async (req,res)=>{
-    /* filtro para q solo nos retorne los campos deseados */
-    const usuarios = await Usuario.find({},'nombre email role google');
+const getUsuarios = async (req = request,res)=>{
+
+    /* "desde" parametro enviado desde la petición HTTP,
+    si no viene el parametro "desde" entonces que tome el valor 0 */
+    const desde = +req.query.desde || 0;
+    console.log('desde --> ',desde);
+
+    const [usuarios, total] = await Promise.all([
+        /* filtro para q solo nos retorne los campos deseados */
+        await Usuario.find({},'nombre email role google img')
+        .skip(desde)
+        .limit(5),
+        /* el skip() --> es para q se salte todos los valores que están antes del numero que tiene la variable "desde" */
+
+        await Usuario.count()
+    ]);    
 
     res.json({
         ok: true,
         usuarios,
-        uid: req.uid
+        uid: req.uid,
+        total
     });
 }
 
@@ -36,7 +50,7 @@ const crearUsuarios = async (req,res = response )=>{
 
         await usuario.save();
         
-        /*  generar TOKEN que será un JWT */
+        /*  generar TOKEN que será un JWT, y agregamos el id del usuario q se creó */
         const token = await generarJWT(usuario.id);
         
         res.json({

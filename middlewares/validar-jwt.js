@@ -13,6 +13,7 @@ const validarJWT = (req, res = response , next) => {
     }
 
     try {
+        /* comparando Token */
         const { uid } = jwt.verify(tokenHeader, process.env.JWT_SECRET);
         
         /* seteando información en la request, es decir, la request tendrá un nuevo elemento llamado uid */
