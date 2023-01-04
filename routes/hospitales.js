@@ -10,7 +10,8 @@ const {
     getHospitales,
     crearHospital,
     actualizarHospital,
-    borrarHospital
+    borrarHospital,
+    getHospitalById
 } = require('../controllers/hospitales')
 
 /* instancia del Router */
@@ -38,5 +39,7 @@ router.put('/:id',
 );
 
 router.delete('/:id',validarJWT,borrarHospital);
+
+router.get('/:id',validarJWT,getHospitalById);
 
 module.exports = router;

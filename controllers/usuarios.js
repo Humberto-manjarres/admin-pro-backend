@@ -100,8 +100,15 @@ const actualizarUsuarios = async (req,res = response) =>{
             }
         }
 
-        /* asignando nuevamente valor a email de campos */
-        campos.email = email;
+        if (!usuarioDb.google) {
+            /* asignando nuevamente valor a email de campos */
+            campos.email = email;
+        }else if (usuarioDb.email !== email) {
+            return res.status(400).json({
+                ok: false,
+                msg: 'Usuario de google no puede cambiar su correo'
+            });
+        }
 
         /* eliminamos los campos que no queremos actualizar */
         /* delete campos.password;

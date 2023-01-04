@@ -89,10 +89,29 @@ const renewToken = async (req, res = response)=> {
     //generar el token
     const token = await generarJWT(uid);
 
-    res.json({
-        ok: true,
-        token
-    })
+    try {
+        //Obtener usuario por uid
+        const usuarioDb = await Usuario.findById(uid);
+        if (!usuarioDb) {
+            res.status(404).json({
+            ok: false,
+            msg: 'Usuario no existe!'     
+            })
+        }
+        
+        res.json({
+            ok: true,
+            token,
+            usuarioDb
+        })
+
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            ok: false,
+            msg: 'Error inesperado'
+        });    
+    }
 }
 
 module.exports = {

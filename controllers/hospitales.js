@@ -109,9 +109,29 @@ const borrarHospital = async (req = request,res = response)=>{
     }
 }
 
+
+const getHospitalById = async (req = request,res = response)=> {
+    const id = req.params.id;
+    try {
+        const hospital = await Hospital.findById(id);
+        console.log(hospital);
+        res.json({
+            ok: true,
+            hospital
+        });    
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            ok: false,
+            msg: 'Hable con el administrador!'
+        })
+    }
+}
+
 module.exports = {
     getHospitales,
     crearHospital,
     actualizarHospital,
-    borrarHospital
+    borrarHospital,
+    getHospitalById
 }
